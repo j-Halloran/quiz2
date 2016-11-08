@@ -13,3 +13,25 @@
 
 	console.log("this is a message for you!!!")
 })(jQuery);
+
+$(document).ready(function(){
+  happy();
+  $("#toShow").hide();
+
+  $( "#changeList li" ).each(function(index) {
+    var item = $(this);
+    this.style.color="blue";
+    $(this).text("I am number "+(index+1));
+  });
+
+  $("#clearButton").click(function(event){
+    $("#toFade").fadeOut("slow",function() {
+      $("#toShow").show();
+    });
+  });
+});
+
+
+function happy(){
+  console.log("This is simple and makes me happy.\n");
+}
