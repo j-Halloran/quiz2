@@ -16,6 +16,8 @@ p {
 
 section {
 	margin-bottom: 10px;
+  border-radius: 10px;
+  border: 10px;
 }
 
 ul {

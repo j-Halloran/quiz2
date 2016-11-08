@@ -8,8 +8,8 @@
 (function($){
 	$('.links li a').on('click', function(e) {
 		e.preventDefault()
-		alrt('you clicked a link, good for you');
+		alert('you clicked a link, good for you');
 	});
 
 	console.log("this is a message for you!!!")
-})(jQery);
+})(jQuery);
