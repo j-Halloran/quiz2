@@ -17,6 +17,7 @@
 $(document).ready(function(){
   happy();
   $("#toShow").hide();
+  $(".panel").hide();
 
   $( "#changeList li" ).each(function(index) {
     var item = $(this);
@@ -28,6 +29,24 @@ $(document).ready(function(){
     $("#toFade").fadeOut("slow",function() {
       $("#toShow").show();
     });
+  });
+
+  $("#panel1Button").click(function(event){
+    if($("#panel1").css('display')=="none"){
+      $("#panel1").fadeIn("slow");
+    }
+    else{
+      $("#panel1").fadeOut("slow");
+    }
+  });
+
+  $("#panel2Button").click(function(event){
+    if($("#panel2").css('display')=="none"){
+      $("#panel2").fadeIn("slow");
+    }
+    else{
+      $("#panel2").fadeOut("slow");
+    }
   });
 });
 
